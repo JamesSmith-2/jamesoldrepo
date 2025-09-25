@@ -1,0 +1,23 @@
+#narrowScreen{
+
+    background-color: green;
+
+}
+#wideScreen{
+
+}
+#shortScreen{
+
+}
+#tallScreen{
+
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        background-color: brown;
+    }
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+    }

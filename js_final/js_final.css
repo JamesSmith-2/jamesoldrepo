@@ -1,0 +1,76 @@
+body {
+    background-color: gray;
+    font-family: Comic Sans MS, cursive;
+}
+
+.volume-slider {
+    width: 200px;
+    height: 20px;
+    background-color: lightgray;
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.volume-handle {
+    width: 10px;
+    height: 40px;
+    background-color: #0000ff;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.game-board {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #222;
+    display: none;
+    z-index: 30;
+}
+
+.paddle {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: #fff;
+}
+
+#player1 {
+    left: 10px;
+    top: 160px;
+    z-index: 9999;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+#player2 {
+    right: 10px;
+    top: 160px;
+    background-color: #0000ff;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 390px;
+    top: 190px;
+}
+
+#scoreboard {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: larger;
+    
+}

@@ -1,0 +1,112 @@
+/*Desktop*/
+  
+
+
+/* Basics */
+body {
+    font-family: 'Georgia', 'Times New Roman', Calibri;
+    line-height: 1.6;
+    color: #333;
+    background-color: #a0aecd;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* header */
+  header {
+    background-color: #8B9AB9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+/*
+  .title
+    {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+  }
+  */
+  /* concert titles */
+  h2 {
+    color: #444;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    z-index: 0;
+  }
+  
+  #togglebutton{
+    display: inline-block;
+
+  }
+  /* description */
+
+  #togglebutton:checked ~ #vivaldi-description,#togglebutton:checked ~ #beethoven3-description, #togglebutton:checked ~ #Tchaikovsky-description,#togglebutton:checked ~ #ravel-description,#togglebutton:checked ~ #beethoven8-description,#togglebutton:checked ~ #beethoven-emperor-description,#togglebutton:checked ~ #barktok-description,#togglebutton:checked ~ #brahms-description,#togglebutton:checked ~ #beethoven-violin-description  {
+    display: block;
+  }
+
+  #vivaldi-description, #beethoven3-description, #Tchaikovsky-description, #ravel-description, #beethoven8-description, #beethoven-emperor-description, #bartok-description, #brahms-description, #beethoven-violin-description  {
+    display: none;
+    background-color: #8B9AB9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 0;
+  }
+  
+  /* artists */
+  .artists {
+    font-style: italic;
+    color: black;
+  }
+  
+  /* repertoire list */
+  .repertoire {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .repertoire li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Hover for repertoire */
+  .repertoire li:hover {
+    background-color: greenyellow;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .social_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  /* Mobile */
+
+  @media (max-width: 400px) {
+    
+}
